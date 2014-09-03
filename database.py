@@ -1,9 +1,8 @@
-from pymongo import Connection
+from pymongo import MongoClient
 import math
 import unicodedata
-Connection = Connection('mongo.stuycs.org')
+Connection = MongoClient()
 db=Connection.admin
-res=db.authenticate('ml7','ml7')
 Accounts= db.Accounts
 Messages = db.Messages
 
